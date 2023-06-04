@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		 $.fn.animate_Text = function() {
+		  var string = this.text();
+		  return this.each(function(){
+		   var $this = $(this);
+		   $this.html(string.replace(/./g, '<span class="new">$&</span>'));
+		   $this.find('span.new').each(function(i, el){
+		    setTimeout(function(){ $(el).addClass('div_opacity'); }, 40 * i);
+		   });
+		  });
+		 };
+		 $('#example').show();
+		 $('#example').animate_Text();
+		});
+	</script>
+	<div class="one" id="one">
+		<div id="menu">
+			<menu>
+				<ul>
+					<li id="ff"><a href="#one"><img src="img/kk.png"><p>Дом</p></a></li>
+					<li id="ff1"><a href="#two"><img src="img/kk1.png"><p>О нас</p></a></li>
+					<li id="ff2"><a href="#tre"><img src="img/kk2.png"><p>Меню</p></a></li>
+					<li id="ff3"><a href="#four"><img src="img/kk3.png"><p>Кошки</p></a></li>
+					<li id="ff4"><a href=""><img src="img/kk4.png"><p>Контакты</p></a></li>
+				</ul>
+			</menu>
+		</div>
+		<div id="logo">
+			<p>cat cafe</p>
+		</div>
+		<div id="text">
+			<h1>Добро пожаловать!</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<img id="gg" src="img/icona.png">
+	</div>
+	<div class="two" id="two">
+		<div id="logo1">
+			<p>cat cafe</p>
+		</div>
+		<div id="dek">
+			<img src="img/dek.png">
+		</div>
+		<div id="text2">
+			<h2>О нас</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div id="ll">
+			<img src="img/ll.png">
+		
+			<details>
+			<summary>Далее</summary>
+
+			  <p>вымышленный персонаж и главная героиня первого полнометражного<br> мультфильма студии Уолта Диснея «Белоснежка и семь гномов», снятого в<br> 1937 году по мотивам одноимённой сказки братьев Гримм.<br> Также Белоснежка является первой официальной диснеевской <br>принцессой и самой юной из них: ей 14 лет. </p>
+			</details> 
+		</div>
+	</div>
+	<div class="tre" id="tre">
+		<div id="top">
+			<div id="ca">
+				<img src="img/ca.png">
+			
+				<details>
+				<summary>Cocoa</summary>
+
+				  <p>Цена: 30<br>Порция: 250г</p>
+				</details>
+			</div>
+			<div id="cf">
+				<img src="img/cf.png">
+			
+				<details>
+				<summary>Cofe</summary>
+
+				  <p>Цена: 40<br>Порция: 250мл</p>
+				</details>
+			</div>
+			<div id="ct">
+				<img src="img/ct.png">
+			
+				<details>
+				<summary>Pie</summary>
+
+				  <p>Цена: 50<br>Порция: 250г</p>
+				</details>
+			</div>
+			<div id="ch">
+				<img src="img/ch.png">
+			
+				<details>
+				<summary>Tea</summary>
+
+				  <p>Цена: 30<br>Порция: 250мл</p>
+				</details>
+			</div>
+		</div>
+	</div>
+	<div class="four" id="four">
+		<p>Наши кошки</p>
+		<div class="conteiner1">
+			<div class="box1">
+				<img src="img/1.jpg">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+			<div class="box1">
+				<img src="img/2.jpg">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+			<div class="box1">
+				<img src="img/3.jpg">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+			<div class="box4">
+				<img src="img/4.jpg">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+			<div class="box5">
+				<img src="img/5.jpg">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+			<div class="box1">
+				<img src="img/6.jpg">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+			<div class="box1">
+				<img src="img/7.jpg">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+			<div class="box8">
+				<img src="img/8.jpg">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+		</div>
+	</div>
+</body>
